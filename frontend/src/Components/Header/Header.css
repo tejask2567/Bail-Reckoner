@@ -1,0 +1,170 @@
+/* Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #96b3d2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: larger;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Desktop Navigation */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #2563eb;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .signup-btn {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .login-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .signup-btn:hover {
+    background-color: #1e48a3;
+  }
+  
+  /* Mobile Menu Toggle */
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  /* Mobile Navigation */
+  .mobile-nav {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+  
+    .mobile-menu-toggle {
+      display: block;
+    }
+  
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      gap: 15px;
+    }
+  
+    .mobile-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #666;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .mobile-nav-link:hover {
+      background-color: #f0f0f0;
+    }
+  
+    .mobile-auth-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .mobile-login-btn,
+    .mobile-signup-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .mobile-login-btn {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+  
+    .mobile-signup-btn {
+      background-color: #1844a5;
+      color: white;
+    }
+  }

@@ -1,0 +1,149 @@
+/* GeminiChatbox.css */
+.gemini-chatbox-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2001;
+  }
+  
+  .gemini-chat-toggle-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gemini-chat-toggle-btn:hover {
+    background-color: #6f96ec;
+  }
+  
+  .gemini-chat-container {
+    width: 24rem;
+    max-height: 32rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7b98d5;
+  }
+  
+  .gemini-chat-header {
+    background-color: rgb(220, 214, 207);
+    color: rgb(34, 34, 34);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .gemini-chat-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .gemini-chat-header-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .gemini-chat-header-actions button {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gemini-chat-header-actions button:hover {
+    background-color: #2563eb;
+  }
+  
+  .gemini-chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .gemini-chat-message {
+    display: flex;
+    width: 100%;
+  }
+  
+  .gemini-chat-message.user {
+    justify-content: flex-end;
+  }
+  
+  .gemini-chat-message.bot {
+    justify-content: flex-start;
+  }
+  
+  .gemini-chat-message .message-content {
+    max-width: 80%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+  
+  .gemini-chat-message.user .message-content {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .gemini-chat-message.bot .message-content {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+  
+  .gemini-chat-input-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    background-color: white;
+  }
+  
+  .gemini-chat-input-area input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #7f9fd0;
+    border-radius: 9999px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .gemini-chat-input-area input:focus {
+    border-color: #7592d7;
+  }
+  
+  .gemini-chat-input-area button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gemini-chat-input-area button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .gemini-chat-input-area button:hover:not(:disabled) {
+    background-color: #4c7fec;
+  }
